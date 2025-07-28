@@ -1,0 +1,22 @@
+{
+  "name": "notion-linkedin-generator",
+  "version": "1.0.0",
+  "description": "Génération automatique de posts LinkedIn depuis Notion",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.3",
+    "@anthropic-ai/sdk": "^0.27.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

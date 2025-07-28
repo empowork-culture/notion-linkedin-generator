@@ -98,9 +98,7 @@ async function getRelatedPages(pageId: string, relationProperty: string) {
       property_id: relationProperty,
     });
 
-    if (response.type === 'relation' && response.relation) {
-      const relatedPages = [];
-      
+if (response.type === 'relation' && Array.isArray(response.relation)) {      const relatedPages = [];
       for (const relation of response.relation) {
         const relatedPage = await notion.pages.retrieve({ 
           page_id: relation.id 
